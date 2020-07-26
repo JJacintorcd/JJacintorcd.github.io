@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;1,500&display=swap');
+
+@media all and ( max-width: 600px ) {
+    .navbar-brand img {display: none;}
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Spectral', serif;;
+    color: black
+}
+
+.navbar{
+    text-transform: uppercase;
+    font-weight: 500;
+    background: rgba(0, 0,0, .4)!important;  
+}
+.navbar-brand{
+  height: 3.6rem;
+  padding-left: 5rem;
+}
+.navbar-brand img{
+  height: 8rem;
+  border-radius: 100%;
+  padding-right: 1rem;
+}
+
+.navbar-nav li{
+  padding-right: 65px;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color:white;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color:#d8b646
+}
+
+
+.carousel-item{
+  height: 100vh;
+}
+.carousel-caption{
+  position:absolute;
+  top:40%;
+}
+
+.jumbotron{
+  width: 940px;
+  height: 409px;
+  padding-top: 75px;
+  margin-top: 160px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgba(70, 80, 82, 0.8);
+}
+
+.skills img{
+  max-width: 50%;
+}
+
+.row.no-padding [class*=col-]{
+  text-align: center;
+}
+
+
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+}
+.card{
+  cursor: pointer;
+  width: 134px;
+  height: 134px;
+}
+.front, .back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front img{
+  height: 100%;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  background: #b3cdd1;
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-content{
+  color: #d8b646;
+  text-shadow: 0 0 2px black ;
+  text-align: center;
+  width: 100%;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.project img{
+  max-width: 50%;
+}
+
+.aboutText{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.studies img{
+
+  width: 120px;
+  height: 120px;
+
+}
+
+.footer {
+  position: fixed;
+  padding-right: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:none;
+  color: #b3cdd1;
+  text-align: right;
+}
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
