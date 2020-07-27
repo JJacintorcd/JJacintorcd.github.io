@@ -4,6 +4,18 @@
     .navbar-brand img {display: none;}
 }
 
+/* @media only screen and (min-width: 1270px) and (max-width: 100vw) {
+.navbar-nav li{
+  display: hidden;
+}
+}
+
+@media only screen and (min-width: 890px) and (max-width: 1270px) {
+  .navbar-nav li{
+    display: hidden;
+  }
+  } */
+
 body{
     overflow-x: hidden;
     font-family: 'Spectral', serif;;

@@ -12,6 +12,8 @@ for (var i = 0; i < btns.length; i++) {
     });
 }
 
+
+
 function nextH(){
     for (var i = 0; i < btns.length; i++) {
             var current = document.getElementsByClassName("active");
@@ -27,8 +29,6 @@ function prevH(){
             this.className += " active";
     }
 }
-
-
 
 
 
